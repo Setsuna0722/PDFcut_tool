@@ -1,0 +1,11 @@
+.idea/
+*.iml
+__pycache__/
+*.pyc
+dist/
+build/
+.venv/
+.env
+
+*_bak.txt
+*_bak.spec
