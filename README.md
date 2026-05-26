@@ -9,7 +9,7 @@
 
 ### 🔹 模式選擇畫面
 
-<img src="images/00_main.png" width="400">
+<img src="images/00_main.png" width="300">
 
 ### 🔹 批次分割畫面
 
@@ -21,7 +21,7 @@
 
 ### 🔹 是否排除空白頁
 
-<img src="images/03_black_page.png" width="500">
+<img src="images/03_black_page.png" width="300">
 
 ### 🔹 分割完成畫面
 
