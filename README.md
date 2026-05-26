@@ -9,19 +9,24 @@
 
 ### 🔹 模式選擇畫面
 
-<img src="images/01_mode_select.png" width="700">
+<img src="images/00_main.png" width="200">
 
 ### 🔹 批次分割畫面
 
-<img src="images/02_split_all.png" width="700">
+<img src="images/01_choose_data.png" width="200">
 
 ### 🔹 指定頁碼分割
 
-<img src="images/03_split_selected.png" width="700">
+<img src="images/02_page_number.png" width="200">
+
+### 🔹 是否排除空白頁
+
+<img src="images/03_black_page.png" width="200">
 
 ### 🔹 分割完成畫面
 
-<img src="images/05_complete.png" width="700">
+<img src="images/04_result_full.png" width="200">
+<img src="images/04_result_onedatacut.png" width="200">
 
 ---
 
