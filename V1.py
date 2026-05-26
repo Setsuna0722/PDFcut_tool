@@ -16,12 +16,14 @@ def parse_page_range(page_input, total_pages):
             try:
                 start, end = map(int, part.split('-'))
                 pages.update(range(start - 1, end))
-            except:
+            except Exception as e:
+                print(e)
                 continue
         else:
             try:
                 pages.add(int(part) - 1)
-            except:
+            except Exception as e:
+                print(e)
                 continue
     return sorted(p for p in pages if 0 <= p < total_pages)
 
@@ -68,13 +70,13 @@ def split_all_pages(pdf_paths, progress_callback, status_callback):
             for i in range(total_pages):
                 writer = PdfWriter()
                 writer.add_page(reader.pages[i])
-                output_path = os.path.join(output_folder, f"{folder_name}_page_{i + 1}.pdf")
+                output_path = os.path.join(str(output_folder), f"{folder_name}_page_{i + 1}.pdf")
                 with open(output_path, "wb") as f:
                     writer.write(f)
 
             status_callback(f"✅ 分割完成：{filename} → {total_pages} 頁")
         except Exception as e:
-            status_callback(f"❌ 分割失敗：{filename}，錯誤：{e}")
+            status_callback(f"❌ 檔案分割失敗，錯誤：{e}")
 
         progress_callback(index, len(pdf_paths))
 
